@@ -1,6 +1,14 @@
 body {
-  background-color: lightblue;
+  background-color: rgb(137, 211, 235);
   font-family: Montserrat;
+}
+
+#bio {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 40%;
 }
 
 div.col-6{
@@ -16,4 +24,12 @@ div.col-6{
     height: auto;
     border: 2px solid black;
     border-radius: 10px;
+}
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 40%;
 }
