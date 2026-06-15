@@ -53,18 +53,14 @@
             const formulario = document.getElementById("Miformulario");
             const visor = document.getElementById("resultado");
 
-            // Escuchamos el evento 'submit'
             formulario.addEventListener("submit", function (event) {
-                // 1. EVITAMOS que la página se recargue (comportamiento por defecto)
                 event.preventDefault();
 
-                // 2. CAPTURAMOS los datos usando FormData
                 const datos = new FormData(formulario);
-                const nombre = datos.get("Minombre"); // 'Minombre' es el NAME del input
+                const nombre = datos.get("Minombre");
                 const email = datos.get("Micorreo");
                 const genero = datos.get("Migenero");
 
-                // 3. MOSTRAMOS el resultado en el HTML
                 visor.innerText =
                 "Nombre: " + nombre +
                 "\nCorreo: " + email +
@@ -72,6 +68,9 @@
 
             });
         </script>
+                <footer style="display: flex; justify-content: center">
+            Raul Martínez 2026
+        </footer>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
