@@ -8,7 +8,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
         crossorigin="anonymous">
         <link rel="stylesheet" href="../styles/style.css">
-        <title>Formulario de Contacto</title>
+        <title>Contáctame | RGMU</title>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -19,6 +19,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="experiencia.html" aria-disabled="true">Experiencia</a>
+                </li>
                 <li class="nav-item">
                 <a class="nav-link" href="form.html">Contáctame</a>
                 </li>
@@ -48,29 +51,20 @@
 
         <div id="resultado" style="margin-top: 20px; color: blue"></div>
         </center>
-
-        <script>
-            const formulario = document.getElementById("Miformulario");
-            const visor = document.getElementById("resultado");
-
-            formulario.addEventListener("submit", function (event) {
-                event.preventDefault();
-
-                const datos = new FormData(formulario);
-                const nombre = datos.get("Minombre");
-                const email = datos.get("Micorreo");
-                const genero = datos.get("Migenero");
-
-                visor.innerText =
-                "Nombre: " + nombre +
-                "\nCorreo: " + email +
-                "\nGénero: " + genero;
-
-            });
-        </script>
-                <footer style="display: flex; justify-content: center">
+        <footer style="position: fixed; bottom: 0; width: 100%"> 
+        <div style="display: flex; justify-content: center; align-items:center">
+            <a href="mailto: raul200402@outlook.com">Correo</a>
+            <p style="margin: 25px">|</p>
+            <a href="https://wa.me/5574908700">WhatsApp</a>
+            <p style="margin: 25px">|</p>
+            <a href="https://www.linkedin.com/in/raul-gustavo-martinez-umana/">LinkedIn</a>
+            <p style="margin: 25px">|</p>
+            <a href="https://github.com/RaulGustavo">GitHub</a>
+        </div>
+        <p style="display: flex; justify-content: center">
             Raul Martínez 2026
-        </footer>
+        </p>
+    </footer>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
