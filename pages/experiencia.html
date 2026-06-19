@@ -8,13 +8,17 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/script.js" defer></script>
     <title>Experiencia | RGMU</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">Mi Perfil</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" 
+        type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav" aria-controls="navbarNav" 
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -25,49 +29,65 @@
             <li class="nav-item">
             <a class="nav-link" href="form.html">Contáctame</a>
             </li>
-            <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Desactivado</a>
-            </li>
         </ul>
         </div>
     </div>
     </nav>
+
     <br>
     <center>
         <h1>Experiencia Laboral</h1>
     </center>
     <br>
+
     <div class="container-fluid">
         <div class="block">
             <h3>Analista de Datos</h3>
-            <p>Latamco y Estrategias Creativas (2026 - Actual)
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-            <path 
-            fill-rule="evenodd" 
-            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-            </svg></p>
+            <p>Latamco y Estrategias Creativas (2026 - Actual)</p>
+            <button class="btn btn-info" onclick="expandir(event)">Ver más</button>
+            <div class="info-extra">
+                <br>
+                <p>Luyoa es una empresa emergente que ofrece tarjetas de
+                    fidelización digitales a través de una plataforma para smartphones,
+                    sin necesidad de que los clientes descarguen una aplicación
+                    aparte. Durante dos meses, fui encargado de generar códigos en
+                    Python para obtener KPIs relevantes al cliente. También ayudé a
+                    limpiar las bases de datos, eliminando toda la información sensible
+                    de los clientes.</p>
+            </div>
         </div>
         <br>
         
         <div class="block">
             <h3>Programador Python</h3>
-            <p>LUYOA (2025)
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-            <path 
-            fill-rule="evenodd" 
-            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-            </svg></p>
+            <p>LUYOA (2025)</p>
+            <button class="btn btn-info" onclick="expandir(event)">Ver más</button>
+            <div class="info-extra">
+                <br>
+                <p>Colaboré en el desarrollo de ConnectUP, una aplicación que permitiría 
+                    ayudar a los colaboradores de la UP manejar sus datos y sus clases. 
+                    Ayudé a programar el servidor y a conectar la base de datos con las 
+                    APIs Rest creadas usando Django REST Framework. En este proyecto
+                    aprendí a trabajar en equipo, más que nada en la conexión de las
+                    APIs a las interfaces de front-end.</p>
+            </div>
         </div>
         <br>
         
         <div class="block">
             <h3>Desarrollador Back-End</h3>
-            <p>iOS Development Lab UPMX (2024 - 2025)
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-            <path 
-            fill-rule="evenodd" 
-            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-            </svg></p>
+            <p>iOS Development Lab UPMX (2024 - 2025)</p>
+            <button class="btn btn-info" onclick="expandir(event)">Ver más</button>
+            <div class="info-extra">
+                <br>
+                <p>Actualmente soy encargado de monitorear la actividad de los
+                    usuarios mediante una plataforma dinámica, la cual demuestra el
+                    número de participaciones, las puntuaciones semanales, las
+                    provincias donde hay más actividad, entre otros. Cada semana,
+                    elaboro los reportes semanales demostrando las métricas
+                    mencionadas anteriormente.</p>
+            </div>
+
         </div>
         <br>
     </div>

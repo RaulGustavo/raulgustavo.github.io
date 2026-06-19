@@ -8,6 +8,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
         crossorigin="anonymous">
         <link rel="stylesheet" href="../styles/style.css">
+        <script src="../scripts/script.js" defer></script>
         <title>Contáctame | RGMU</title>
     </head>
     <body>
@@ -25,31 +26,27 @@
                 <li class="nav-item">
                 <a class="nav-link" href="form.html">Contáctame</a>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Desactivado</a>
-                </li>
             </ul>
             </div>
         </div>
         </nav>
+
         <center>
             <br>
         <h1>Contáctame</h1>
         <form id="Miformulario">
-            <label>Nombre</label>
+            <label>Nombre</label><br>
             <input type="text" name="Minombre" required><br><br>
-            <label>Email</label>
+            <label>Email</label><br>
             <input type="email" name="Micorreo" required><br><br>
-            <p>Género</p>
-            <input type="radio" name="Migenero" value="Hombre" required>
-            <label>Hombre</label><br>
-            <input type="radio" name="Migenero" value="Mujer" required>
-            <label>Mujer</label>
+            <label>Mensaje</label><br>
+            <textarea name="Mimensaje" required></textarea>
             <br><br>
-            <button type="submit">Enviar</button>
+            <button id="submit" type="submit" class="btn btn-info" onclick="enviar(event)">Enviar</button>
         </form>
 
-        <div id="resultado" style="margin-top: 20px; color: blue"></div>
+        <div id="resultado" style="margin-top: 20px; color: black"></div>
+
         </center>
         <footer style="position: fixed; bottom: 0; width: 100%"> 
         <div style="display: flex; justify-content: center; align-items:center">
