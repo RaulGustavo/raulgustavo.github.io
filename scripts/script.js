@@ -1,12 +1,15 @@
 function expandir(event) {
+    event.preventDefault();
     const button = event.currentTarget;
     const block = button.parentElement;
 
-    if (block.classList.contains("activa")) {
-        block.classList.remove("activa");
+    let lista = block.classList;
+
+    if (lista.contains("activa")) {
+        lista.remove("activa");
         button.textContent = "Ver más";
     } else {
-        block.classList.add("activa");
+        lista.add("activa");
         button.textContent = "Ver menos";
     }
 }
@@ -19,11 +22,16 @@ function enviar(event) {
     const datos = new FormData(formulario);
     const nombre = datos.get("Minombre");
     const email = datos.get("Micorreo");
+    const asunto = datos.get("Miasunto");
     const mensaje = datos.get("Mimensaje");
 
-    if (nombre || email || mensaje) {
-        res.innerText = "Se enviaron tus datos exitosamente!"
+    const subject = `${asunto} - ${nombre}`;
+    const body = `${mensaje}`;
+
+    if (nombre && email && mensaje) {
+        window.location.href =
+            `mailto: raul200402@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     } else {
-        res.innerText = "Por favor llena los campos obligatorios antes de enviar"
+        res.innerText = "Por favor llena los campos obligatorios antes de enviar";
     }
 }
