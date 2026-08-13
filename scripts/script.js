@@ -35,3 +35,7 @@ function enviar(event) {
         res.innerText = "Por favor llena los campos obligatorios antes de enviar";
     }
 }
+
+function cvLanguage(event) {
+    event.preventDefault();
+}
