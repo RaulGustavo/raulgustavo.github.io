@@ -5,10 +5,10 @@ body {
 }
 
 #bio {
-    background-image: url("../images/wallpaper.jpg");   
+    background-image: url("../media/wallpaper.jpg");   
     padding: 100px;
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     display: flex;
     background-size: cover;
     background-position: center;
@@ -16,9 +16,8 @@ body {
 }
 
 .myphoto {
-    width: 180px;
     height: auto;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 10px;
 }
 
@@ -28,6 +27,22 @@ div.block {
     background-color: white;
     border-radius: 10px;
     text-align: justify;
+}
+
+#container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+#standard {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #f00010;
+  border-radius: 30px;
+  padding: 20px;
+  display: block;
+  margin: 20px;
 }
 
 form {
@@ -46,6 +61,10 @@ footer {
     height: auto;
 }
 
+#copy{
+    font-family: Bona Nova;
+}
+
 .info-extra {
   display: none;
   margin-top: 20px;
@@ -54,4 +73,48 @@ footer {
 
 .block.activa .info-extra {
   display: block;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-color: white;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
 }

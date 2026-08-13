@@ -7,33 +7,36 @@
     rel="stylesheet" 
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
     crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="../media/favicon.jpg" />
     <link rel="stylesheet" href="../styles/style.css">
     <script src="../scripts/script.js" defer></script>
     <title>Experiencia | RGMU</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">Mi Perfil</a>
-        <button class="navbar-toggler" 
-        type="button" data-bs-toggle="collapse" 
-        data-bs-target="#navbarNav" aria-controls="navbarNav" 
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link" href="experiencia.html" aria-disabled="true">Experiencia</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="form.html">Contáctame</a>
-            </li>
-        </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Raúl Martínez</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="experiencia.html">Experiencia</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" href="proyectos.html">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="links.html">Enlaces</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="form.html">Contáctame</a>
+                </li>
+            </ul>
+            </div>
         </div>
-    </div>
-    </nav>
-
+        </nav>
     <br>
     <center>
         <h1>Experiencia Laboral</h1>
@@ -42,8 +45,23 @@
 
     <div class="container-fluid">
         <div class="block">
-            <h3>Analista de Datos</h3>
-            <p>Latamco y Estrategias Creativas (2026 - Actual)</p>
+            <h3>Operador de Sistema Web</h3>
+            <p>Latamco y Estrategias Creativas (2026)</p>
+            <button class="btn btn-info" onclick="expandir(event)">Ver más</button>
+            <div class="info-extra">
+                <p>Actualmente soy encargado de monitorear la actividad de los
+                    usuarios mediante una plataforma dinámica, la cual demuestra el
+                    número de participaciones, las puntuaciones semanales, las
+                    provincias donde hay más actividad, entre otros. Cada semana,
+                    elaboro los reportes semanales demostrando las métricas
+                    mencionadas anteriormente.</p>
+            </div>
+        </div>
+        <br>
+        
+        <div class="block">
+            <h3>Asistente de Ciencia de Datos</h3>
+            <p>LUYOA (2025)</p>
             <button class="btn btn-info" onclick="expandir(event)">Ver más</button>
             <div class="info-extra">
                 <p>Luyoa es una empresa emergente que ofrece tarjetas de
@@ -58,8 +76,8 @@
         <br>
         
         <div class="block">
-            <h3>Programador Python</h3>
-            <p>LUYOA (2025)</p>
+            <h3>Desarrollador Back-End</h3>
+            <p>iOS Development Lab UP (2024 - 2025)</p>
             <button class="btn btn-info" onclick="expandir(event)">Ver más</button>
             <div class="info-extra">
                 <p>Colaboré en el desarrollo de ConnectUP, una aplicación que permitiría 
@@ -68,21 +86,6 @@
                     APIs Rest creadas usando Django REST Framework. En este proyecto
                     aprendí a trabajar en equipo, más que nada en la conexión de las
                     APIs a las interfaces de front-end.</p>
-            </div>
-        </div>
-        <br>
-        
-        <div class="block">
-            <h3>Desarrollador Back-End</h3>
-            <p>iOS Development Lab UPMX (2024 - 2025)</p>
-            <button class="btn btn-info" onclick="expandir(event)">Ver más</button>
-            <div class="info-extra">
-                <p>Actualmente soy encargado de monitorear la actividad de los
-                    usuarios mediante una plataforma dinámica, la cual demuestra el
-                    número de participaciones, las puntuaciones semanales, las
-                    provincias donde hay más actividad, entre otros. Cada semana,
-                    elaboro los reportes semanales demostrando las métricas
-                    mencionadas anteriormente.</p>
             </div>
 
         </div>
