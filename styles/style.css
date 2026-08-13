@@ -4,7 +4,7 @@ body {
   text-align: justify;
 }
 
-#bio {
+#banner {
     background-image: url("../media/wallpaper.jpg");   
     padding: 100px;
     width: 100%;
@@ -15,8 +15,15 @@ body {
     color: white;
 }
 
+@media (max-width: 640px) {
+  .myphoto {
+    display: none;
+  }
+}
+
 .myphoto {
     height: auto;
+    width: 220px;
     border: 3px solid black;
     border-radius: 10px;
 }
