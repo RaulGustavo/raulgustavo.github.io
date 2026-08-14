@@ -23,6 +23,11 @@ body {
   .myphoto {
     display: none;
   }
+
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
 }
 
 .myphoto {
