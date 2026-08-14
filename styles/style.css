@@ -1,9 +1,6 @@
-* {
-  font-family: "Montserrat";
-}
-
 body {
   background-color: rgb(34, 176, 223);
+  font-family: Montserrat;
   text-align: justify;
 }
 
