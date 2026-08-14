@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 body {
   background-color: rgb(34, 176, 223);
-  font-family: Montserrat;
   text-align: justify;
 }
 
