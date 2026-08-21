@@ -2,6 +2,9 @@ body {
   background-color: rgb(34, 176, 223);
   font-family: Montserrat;
   text-align: justify;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 #banner {
@@ -66,11 +69,13 @@ form {
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
-    width: 40%;
+    width: min(90%, 600px);
+    box-sizing: border-box;
 }
 
 footer {
     background-color: rgb(255, 255, 255);
+    margin-top: auto;
     text-align: center;
     padding: 10px;
     max-width: 100%;
