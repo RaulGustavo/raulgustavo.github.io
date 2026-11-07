@@ -98,9 +98,11 @@ footer {
 
 .flip-box {
   background-color: transparent;
-  width: 320px;
-  height: 220px;
+  width: 100%;
+  height: 260px;
   border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  overflow: hidden;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -127,6 +129,12 @@ footer {
   backface-visibility: hidden;
 }
 
+.flip-box-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Style the front side */
 .flip-box-front {
   background-color: white;
@@ -138,4 +146,38 @@ footer {
   background-color: white;
   color: black;
   transform: rotateY(180deg);
+  padding: 1.25rem;
+  text-align: left;
+  overflow-y: auto;
+}
+
+.flip-box-back h2 {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 575.98px), (hover: none) {
+  .flip-box {
+    height: auto;
+    perspective: none;
+  }
+
+  .flip-box-inner {
+    height: auto;
+    transform: none !important;
+  }
+
+  .flip-box-front,
+  .flip-box-back {
+    position: relative;
+    height: auto;
+    backface-visibility: visible;
+  }
+
+  .flip-box-front {
+    aspect-ratio: 16 / 9;
+  }
+
+  .flip-box-back {
+    transform: none;
+  }
 }
